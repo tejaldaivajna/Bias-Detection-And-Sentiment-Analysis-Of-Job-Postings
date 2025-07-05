@@ -30,21 +30,22 @@ It aims to help **HR teams and recruiters**:
 ### 1. **Scraping** (`scraper.py`)
 Scrapes job descriptions for Data Scientist/Analyst roles in India from Indeed using Selenium and Undetected ChromeDriver.
 
-### 2. **Processing & Bias Detection** (`processing.py` + `bias_detection.py`)
-- Cleans and lemmatizes the job text
+### 2. **Bias Detection** (`bias_detection.py`)
+- Cleans and lemmatizes the job text using spaCy
 - Flags biased terms from a curated dictionary
-- Outputs job posts with identified bias terms
+- Appends flagged terms to each record
 
 ### 3. **Sentiment Analysis** (`sentiment_analysis.py`)
 - Uses Groq's LLaMA-3.3-70B model via API
 - Classifies job descriptions as **Positive**, **Neutral**, or **Negative**
-- Caches results to avoid reprocessing
+- Caches results to avoid redundant API calls
 
-### 4. **Visualization**
-Data is exported to CSV and visualized in Tableau:
-- **Geographic Bias Rate Map**
-- **Sentiment Distribution**
-- **Company-wise Bias and Sentiment**
-- **Flagged Terms Word Cloud**
+### 4. **Processing** (`processing.py`)
+- Merges bias and sentiment outputs
+- Generates supporting columns such as city and explodes flagged terms for visualization
+- Prepares final structured CSV for visualization
+
+### 5. **Visualization** (`Bias Detection and Sentiment Analysis of Job Postings.twbx`)
+The processed dataset is visualized in **Tableau** to uncover trends across locations, companies, and job tone.
 
 ---
