@@ -1,7 +1,7 @@
 # 🧠 Bias & Sentiment Audit of Job Postings
 
 🔗 **View the Interactive Dashboard on Tableau**  
-[👉 Click here to explore the dashboard]([https://public.tableau.com/app/profile/your-link-here](https://public.tableau.com/views/BiasDetectionandSentimentAnalysisofJobPostings/BiasDashboard?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link))
+[Click here](https://public.tableau.com/views/BiasDetectionandSentimentAnalysisofJobPostings/BiasDashboard?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)
 
 ---
 
